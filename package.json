@@ -1,0 +1,36 @@
+{
+  "name": "magic-mirror-frontend",
+  "private": true,
+  "author": "Tino Prahl",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --host 0.0.0.0",
+    "build": "webpack --env.prod",
+    "format": "prettier --write src/."
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "axios": "^0.19.2",
+    "magicmirror": "^2.0.0",
+    "moment": "^2.25.1",
+    "roboto-fontface": "^0.10.0",
+    "socket.io-client": "^2.3.0",
+    "vue": "^3.0.0-beta.5",
+    "weathericons": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/socket.io-client": "^1.4.32",
+    "@vue/compiler-sfc": "^3.0.0-beta.5",
+    "css-loader": "^3.4.2",
+    "file-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "prettier": "2.0.4",
+    "ts-loader": "^7.0.0",
+    "typescript": "^3.8.3",
+    "url-loader": "^4.0.0",
+    "vue-loader": "^16.0.0-alpha.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
