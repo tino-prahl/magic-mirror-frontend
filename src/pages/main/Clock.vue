@@ -18,7 +18,7 @@ export default {
       time.value = momentInstance.format('HH:mm');
     };
 
-    let interval = setInterval(refreshDateAndTime, 1000);
+    const interval = setInterval(refreshDateAndTime, 1000);
     refreshDateAndTime();
 
     onUnmounted(() => {

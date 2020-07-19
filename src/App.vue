@@ -13,15 +13,15 @@ import { ref, watch } from 'vue';
 import sensor from './middleware/sensor';
 
 import MainPage from './pages/main/index.vue';
-import DummyPage from './pages/DummyPage.vue';
+import WifiPage from './pages/WifiPage.vue';
 
 export default {
   components: {
     MainPage,
-    DummyPage,
+    WifiPage,
   },
   setup: function () {
-    const pages = ['MainPage', 'DummyPage'];
+    const pages = ['MainPage', 'WifiPage'];
 
     const maxPagePosition = pages.length - 1;
 
@@ -65,7 +65,7 @@ export default {
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 @import '~roboto-fontface/css/roboto/roboto-fontface.css';
 @import '~weathericons/css/weather-icons.min.css';
-@import '~magicmirror/css/main.css';
+@import '~bootstrap/dist/css/bootstrap.css';
 
 html {
   overflow: hidden;
@@ -73,7 +73,59 @@ html {
 
 body {
   margin: 0;
+  font-family: 'roboto_condensedregular', arial, serif;
+  font-size: 20px;
+  background: black;
+  color: white;
+}
+
+.dimmed {
+  color: #555;
+}
+.normal {
+  color: #999;
+}
+.bright {
   color: #fff;
+}
+
+.xsmall {
+  font-size: 15px;
+  line-height: 20px;
+}
+.small {
+  font-size: 20px;
+  line-height: 25px;
+}
+.medium {
+  font-size: 30px;
+  line-height: 35px;
+}
+.large {
+  font-size: 65px;
+  line-height: 65px;
+}
+.xlarge {
+  font-size: 75px;
+  line-height: 75px;
+  letter-spacing: -3px;
+}
+
+.thin {
+  font-family: 'robotothin', serif;
+}
+.light {
+  font-family: 'roboto_condensedlight', serif;
+}
+.regular {
+  font-family: 'roboto_condensedregular', serif;
+}
+.bold {
+  font-family: 'roboto_condensedbold', serif;
+}
+
+.table {
+  color: white;
 }
 </style>
 
@@ -93,14 +145,14 @@ body {
 
 .slide-left-enter-from,
 .slide-right-leave-to {
-  transform: translateX(1080px);
+  transform: translateX(100%);
   opacity: 0;
   will-change: transform, opacity;
 }
 
 .slide-left-leave-to,
 .slide-right-enter-from {
-  transform: translateX(-1080px);
+  transform: translateX(-100%);
   opacity: 0;
   will-change: transform, opacity;
 }

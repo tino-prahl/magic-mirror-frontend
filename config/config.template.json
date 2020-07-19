@@ -1,0 +1,21 @@
+{
+  "calendar": {
+    "cronTimes": ["0 0/10 * * * *"],
+    "maxResults": 20
+  },
+  "hafas": {
+    "cronTimes": ["0 0/1 6-7 * * *", "0 0/5 8-23 * * *", "0 0/10 0-5 * * *"],
+    "from": 860,
+    "results": 10,
+    "to": 90
+  },
+  "locale": "de",
+  "weather": {
+    "cronTimes": ["0 0/30 * * * *"]
+  },
+  "wifi": {
+    "password": "1234567890",
+    "security": "WPA",
+    "ssid": "MyWifi"
+  }
+}

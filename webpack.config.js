@@ -78,7 +78,9 @@ module.exports = (env = {}) => ({
       index: 'index.html',
     },
     proxy: {
-      '/calendar': 'http://localhost:3000',
+      '/calendar': 'http://localhost:3001',
+      '/weather': 'http://localhost:3002',
+      '/hafas': 'http://localhost:3003',
     },
   },
 });
