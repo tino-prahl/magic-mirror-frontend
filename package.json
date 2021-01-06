@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^5.0.0-alpha1",
     "cron": "^1.8.2",
     "moment": "^2.26.0",
